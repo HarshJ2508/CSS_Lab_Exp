@@ -128,10 +128,8 @@ int main() {
         cout << endl;
     }
 
-    vector<vector<int>> K = {{6, 24, 1}, {13, 16, 10}, {20, 17, 15}};
-
     
-    vector<vector<int>> keyMatrixInverse = matrix_mod_inverse(K);
+    vector<vector<int>> keyMatrixInverse = matrix_mod_inverse(keyMatrix);
     cout << "\nInverse of K modulo 26:" << endl;
     for(auto &row : keyMatrixInverse) {
         for(int val : row) {
