@@ -9,12 +9,12 @@ int findMap(int ch) {
 
 int main() {
     vector<string> plainText; 
-    int cnt; cin >> cnt;
+    int cnt; cout << "Enter count of words in plain text: "; cin >> cnt;
 
     for(int i = 0; i < cnt; i++) {
         string str; cin >> str; plainText.push_back(str);
     }
-    cout << "Plain Text: ";
+    cout << "Plain text entered: ";
     for(auto &i : plainText) cout << i << " ";
 
     cout << endl;
