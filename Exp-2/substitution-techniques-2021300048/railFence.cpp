@@ -21,13 +21,14 @@ void findCipher(int s, int e, string plainText, vector<string> &cipherText) {
 }
 
 int main() {
-    string plainText = "meetmeatthepark";
-    // cin >> plainText;
+    string plainText;
+    cin >> plainText;
 
-    // cout << "Plain text entered: " << plainText << endl;
+    cout << "Enter Plain text: " << plainText << endl;
 
-    int depth = 2;
-    // cin >> depth;
+    int depth;
+    cout << "Enter depth: ";
+    cin >> depth; cout << depth;
 
     vector<string> cipherText(depth, "");
     for(int i = 0; i < plainText.size(); i += depth * 2 - 2) {
@@ -45,7 +46,19 @@ int main() {
         else ct += cipherText[i];
     }
 
-    cout << "Cipher text: " << ct << endl;
+    cout << "\nCipher text: " << ct << endl;
     
     return 0;
 }
+
+
+/*
+helloworld
+3
+*/
+
+/*
+Enter Plain text: helloworld
+Enter depth: 3
+Cipher text: holelwrdlo
+*/
