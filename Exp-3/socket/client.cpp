@@ -3,6 +3,7 @@
 #include <ws2tcpip.h>
 #include <string>
 
+using namespace std;
 #pragma comment(lib, "Ws2_32.lib")
 
 const int PORT = 8080;
@@ -59,6 +60,9 @@ int main() {
     }
 
     std::cout << "Connected to server" << std::endl;
+
+
+
 
     // Start a thread to receive messages
     CreateThread(NULL, 0, receive_messages, (LPVOID)sock, 0, NULL);
